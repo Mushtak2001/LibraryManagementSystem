@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="589.0" prefWidth="945.0" style="-fx-background-color: #5F7EC5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="librarymanagementsystem.FXMLDocumentController">
+   <children>
+      <MenuBar fx:id="menuBar" layoutY="-2.0" prefHeight="39.0" prefWidth="203.0" style="-fx-background-color: #74A3D5;">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="saleBook" mnemonicParsing="false" onAction="#SaleMethod" text="Sale books" />
+                  <MenuItem fx:id="add" mnemonicParsing="false" onAction="#addMethod" text="add book" />
+                  <MenuItem fx:id="view" mnemonicParsing="false" onAction="#viewMethod" text="view books" />
+              <MenuItem fx:id="exet" mnemonicParsing="false" onAction="#exetMethod" text="exet" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <MenuItem fx:id="edit" mnemonicParsing="false" onAction="#editMethod" text="edit book" />
+              <MenuItem fx:id="delete" mnemonicParsing="false" onAction="#deleteMethod" text="Delete book" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+                  <MenuItem fx:id="Statistics" mnemonicParsing="false" onAction="#StatisticsMehtod" text="Statistics" />
+              <MenuItem fx:id="About" mnemonicParsing="false" onAction="#aboutMethod" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="218.0" layoutY="37.0" text="library management system">
+         <font>
+            <Font name="Arial Bold Italic" size="40.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="484.0" fitWidth="938.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Home.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
